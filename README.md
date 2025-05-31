@@ -44,8 +44,17 @@ Each round provides descriptive feedback via the `describe()` method for both th
 
 ### Deck Initialization & Shuffle
 
-```java 
-   public Deck() { cards = new ArrayList<>(); String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"}; String[] names = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"}; for (String suit : suits) { for (int i = 0; i < names.length; i++) { cards.add(new Card(i + 2, names[i] + " of " + suit)); } } } 
+```java
+public Deck() {
+    cards = new ArrayList<>();
+    String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
+    String[] names = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"};
+    for (String suit : suits) {
+        for (int i = 0; i < names.length; i++) {
+            cards.add(new Card(i + 2, names[i] + " of " + suit));
+        }
+    }
+}
       ```
 
 ### Player Flip & Score Comparison Logic
