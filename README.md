@@ -55,13 +55,11 @@ public Deck() {
         }
     }
 }
-      ```
 
 ### Player Flip & Score Comparison Logic
 
 ```java 
-   Card p1Card = player1.flip(); Card p2Card = player2.flip(); System.out.print(player1.getName() + " plays: "); p1Card.describe(); System.out.print(player2.getName() + " plays: "); p2Card.describe(); if (p1Card.getValue() > p2Card.getValue()) { player1.incrementScore(); System.out.println("-> " + player1.getName() + " wins the round!"); } else if (p1Card.getValue() < p2Card.getValue()) { player2.incrementScore(); System.out.println("-> " + player2.getName() + " wins the round!"); } else { System.out.println("-> It's a tie. No points awarded."); } 
-      ```
+   Card p1Card = player1.flip(); Card p2Card = player2.flip(); System.out.print(player1.getName() + " plays: "); p1Card.describe(); System.out.print(player2.getName() + " plays: "); p2Card.describe(); if (p1Card.getValue() > p2Card.getValue()) { player1.incrementScore(); System.out.println("-> " + player1.getName() + " wins the round!"); } else if (p1Card.getValue() < p2Card.getValue()) { player2.incrementScore(); System.out.println("-> " + player2.getName() + " wins the round!"); } else { System.out.println("-> It's a tie. No points awarded."); }
 
 ## 🚀 Installation & Usage
 
