@@ -54,7 +54,8 @@ public Deck() {
             cards.add(new Card(i + 2, names[i] + " of " + suit));
         }
     }
-}```
+}
+```
 
 ### Player Flip & Score Comparison Logic
 
