@@ -60,7 +60,7 @@ public Deck() {
 ### Player Flip & Score Comparison Logic
 
 ```java 
-   Card p1Card = player1.flip();
+Card p1Card = player1.flip();
 Card p2Card = player2.flip();
 
 System.out.print(player1.getName() + " plays: ");
@@ -78,6 +78,7 @@ if (p1Card.getValue() > p2Card.getValue()) {
 } else {
     System.out.println("-> It's a tie. No points awarded.");
 }
+```
 
 ## 🚀 Installation & Usage
 
