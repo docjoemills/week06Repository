@@ -15,7 +15,7 @@ The game runs entirely in the console and is designed to demonstrate clean class
 
 ## 🔗 Live Demo
 
-Since this is a console-based Java application, there is currently **no live demo URL**.
+There is a description of this code at (https://youtu.be/Zpc7N6wf1tg).
 
 ## 🛠️ Technologies Used
 
