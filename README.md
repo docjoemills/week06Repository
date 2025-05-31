@@ -44,11 +44,15 @@ Each round provides descriptive feedback via the `describe()` method for both th
 
 ### Deck Initialization & Shuffle
 
-<pre> ```java public Deck() { cards = new ArrayList<>(); String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"}; String[] names = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"}; for (String suit : suits) { for (int i = 0; i < names.length; i++) { cards.add(new Card(i + 2, names[i] + " of " + suit)); } } } ``` </pre>
+<pre> ```java 
+   public Deck() { cards = new ArrayList<>(); String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"}; String[] names = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"}; for (String suit : suits) { for (int i = 0; i < names.length; i++) { cards.add(new Card(i + 2, names[i] + " of " + suit)); } } } 
+      ``` </pre>
 
 ### Player Flip & Score Comparison Logic
 
-<pre> ```java Card p1Card = player1.flip(); Card p2Card = player2.flip(); System.out.print(player1.getName() + " plays: "); p1Card.describe(); System.out.print(player2.getName() + " plays: "); p2Card.describe(); if (p1Card.getValue() > p2Card.getValue()) { player1.incrementScore(); System.out.println("-> " + player1.getName() + " wins the round!"); } else if (p1Card.getValue() < p2Card.getValue()) { player2.incrementScore(); System.out.println("-> " + player2.getName() + " wins the round!"); } else { System.out.println("-> It's a tie. No points awarded."); } ``` </pre>
+<pre> ```java 
+   Card p1Card = player1.flip(); Card p2Card = player2.flip(); System.out.print(player1.getName() + " plays: "); p1Card.describe(); System.out.print(player2.getName() + " plays: "); p2Card.describe(); if (p1Card.getValue() > p2Card.getValue()) { player1.incrementScore(); System.out.println("-> " + player1.getName() + " wins the round!"); } else if (p1Card.getValue() < p2Card.getValue()) { player2.incrementScore(); System.out.println("-> " + player2.getName() + " wins the round!"); } else { System.out.println("-> It's a tie. No points awarded."); } 
+      ``` </pre>
 
 ## 🚀 Installation & Usage
 
